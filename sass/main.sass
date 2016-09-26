@@ -1,0 +1,143 @@
+@import '../libs/bootstrap/stylesheets/bootstrap/variables'
+@import '../libs/bootstrap/stylesheets/bootstrap/mixins'
+
+@import 'components/colors'
+@import 'components/buttons'
+@import 'components/inputs'
+@import 'components/images'
+
+
+header
+	padding: 200px 0
+	background: linear-gradient( rgba(0,66,154,.8), rgba(0,173, 254, .5)), url(../imgs/background-1.jpg)
+	background-repeat: center
+	background-size: cover
+	background-attachment: fixed
+
+	.sobre
+		@include make-md-column(6)
+		
+		h1
+			color: #fff
+			font-size: 4em
+		p 
+			color: #fff
+			font-size: 1.8em
+			font-family: 'Open Sans Condensed', sans-serif
+
+	.cadastro
+		@include make-md-column(5)
+		@include make-md-column-offset(1)
+
+		h1
+			color: #fff
+			font-size: 2em
+			margin-bottom: 20px
+
+.logo
+	display: block
+	width: 130px
+	height: 130px
+	background: url(../imgs/logo_button.png) center center no-repeat
+	margin: -65px auto 0 auto
+
+section#plataformas
+	padding: 50px 0 100px 0
+
+	h1
+		color: #444
+		text-align: center
+		margin-bottom: 60px
+		font-size: 2em
+	
+	ul
+		list-style: none
+		display: block
+		width: 487px
+		margin: 0 auto
+
+		li
+			float: left
+			display: inline block
+			margin-right: 60px
+			
+			i
+				margin: 10px auto
+			h1
+				margin-top: 20px
+				min-height: 70px
+				font-size: 1.2em
+			&:last-of-type
+				margin-right: 0px
+			&:first-of-type
+				margin-left: -20px
+#banner
+	background-color: $azul-base
+	padding: 200px 0
+
+	.left
+		@include make-md-column(3)
+		@include make-md-column-offset(2)
+	.right
+		@include make-md-column(6)
+		
+		
+
+		h1
+			font-size: 3em
+			
+			font-weight: bold
+
+		h2 
+			font-size: 3em
+			font-style: italic
+			margin-left: 40px
+			font-family: 'Open Sans Condensed', sans-serif
+		color: #fff
+		h3
+			margin-left: 80px
+			font-size: 2.6em
+			
+			span
+				background-color: #fff
+
+				color: $azul-base
+				font-weight: bold
+				padding: 5px 10px
+				border-radius: 50px
+
+#adquirir
+	padding: 100px 0
+	
+	background: linear-gradient(rgba(220, 220, 220, 1), rgba(255, 255, 255,.8)), url(../imgs/background-2.jpg)
+	background-attachment: fixed
+	background-size: cover
+	background-repeat: no-repeat
+	.left
+		@include make-md-column(4)
+		@include make-md-column-offset(1)
+
+		ul
+			padding: 50px 20px 30px 20px
+			li
+				list-style-type: none
+				margin-left: -10px
+				font-size: 3em
+				font-family: 'Open Sans Condensed', sans-serif
+				font-style: italic
+				margin-bottom: 10px
+
+	.right
+		@include make-md-column(6)
+		@include make-md-column-offset(1)
+
+footer 
+	width: 100%
+	clear: both
+	height: 60px
+	background-color: $azul-base
+	color: #fff
+	font-size: 1.3em
+	font-family: 'Open Sans Condensed', sans-serif
+	text-align: center
+	padding: 20px 0

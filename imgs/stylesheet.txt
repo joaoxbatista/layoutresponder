@@ -1,0 +1,41 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-box {
+    width: 410px;
+    height: 411px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_hangout {
+    width: 51px;
+    height: 61px;
+    background-position: -425px -5px;
+}
+
+.sprite-icon_messenger {
+    width: 51px;
+    height: 51px;
+    background-position: -425px -76px;
+}
+
+.sprite-icon_skype {
+    width: 51px;
+    height: 51px;
+    background-position: -425px -137px;
+}
+
+.sprite-icon_telegram {
+    width: 51px;
+    height: 51px;
+    background-position: -425px -198px;
+}
+
+.sprite-smartphones {
+    width: 160px;
+    height: 191px;
+    background-position: -486px -5px;
+}
