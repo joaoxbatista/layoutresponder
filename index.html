@@ -31,12 +31,12 @@
 				<h1>Realize seu cadastro agora!</h1>
 				<div class="form">
 					<div class="form-group">
-						<input type="text" class="input-rouded form-control" placeholder="Nome">					</div>
+						<input type="text" class="input-rounded form-control" placeholder="Nome">					</div>
 					<div class="form-group">
-						<input type="email" class="input-rouded form-control" placeholder="E-mail">
-					</div>
+						<input type="email" class="input-rounded form-control" placeholder="E-mail">
+</div>
 					<div class="form-group">
-						<input type="text" class="input-rouded form-control" placeholder="Telefone">
+						<input type="text" class="input-rounded form-control" placeholder="Telefone">
 					</div>
 					<a class="btn btn-white btn-block btn-rounded btn-lg btn-outline" href="cadastro.html">Cadastrar-se</a>
 				</div>
@@ -80,7 +80,7 @@
 			<section class="left">
 				<i class="imgs smartphones"></i>
 			</section>
-			<section class="right">
+			<section class="right texto">
 				<h1>O serviço mais completo</h1>
 				<h2>trazendo funcionalidades</h2>
 				<h3>para melhorar seu <span>negocio</span></h3>
@@ -90,7 +90,7 @@
 
 	<section id="adquirir">
 		<div class="container">
-			<section class="left">
+			<section class="left texto">
 				<ul>
 					<li>Fácil instalação</li>
 					<li>Painel adminitrativo</li>
@@ -109,5 +109,45 @@
 	<footer>
 		Sempre © Copyright 2016
 	</footer>
+
+	<!-- Importação dos Scripts-->
+	<script src="libs/scrollreveal/src/scrollreveal.js"></script>
+
+	<script>
+		// Changing the defaults
+		window.sr = ScrollReveal({ reset: true });
+
+		var rotate = {
+			delay    : 300,
+			rotate   : { z: 360 },
+			duration : 2000 
+		}
+
+		var imagem = {
+			delay    : 300,
+			rotate   : { z: -20 },
+			duration : 500 ,
+			distance : '290px',
+			easing   : 'linear'
+		}
+
+		var texto = {
+			delay    : 300,
+			rotate   : { y: 200 },
+			duration : 500 ,
+			distance : '190px',
+			easing   : 'linear'
+		}
+		
+		sr.reveal('.box-sempre', imagem);
+		sr.reveal('.smartphones', imagem);
+		sr.reveal('.texto', texto);
+		sr.reveal('.logo', rotate);
+		sr.reveal('.cadastro', { duration: 1000 });
+		sr.reveal('.sobre', { duration: 1000 });
+		sr.reveal('#plataformas');
+
+		
+	</script>
 </body>
 </html>
