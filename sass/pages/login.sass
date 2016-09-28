@@ -7,9 +7,12 @@
 @import components/inputs
 
 main
-    @include container-fixed()
-    height: 100vh
-
+    min-height: 100vh
+    background: -webkit-linear-gradient(#0396E0, #41CFED)
+    background: -o-linear-gradient(#0396E0, #41CFED)
+    background: linear-gradient(#0396E0, #41CFED)
+        
+    
 .logo
     display: block
     margin: 0px auto 20px auto
@@ -26,7 +29,12 @@ main
     .panel
         border: 0px
         box-shadow: none
-        
+        background-color: transparent
+        color: #fff
+
+        .input-mobile
+            font-size: 1em
+            margin-bottom: 20px
         .panel-footer
             background-color: transparent
             border: 0
@@ -34,5 +42,7 @@ main
             a
                 display: inline-block
                 padding: 10px 20px
+                color: #0B5894
+                text-decoration: none
         
         

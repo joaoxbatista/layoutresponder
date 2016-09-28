@@ -14,8 +14,19 @@
 		background: rgba(0,0,0,.1)
 
 .btn-white
-	border-color: #fff !important
+	border: none
+	border-radius: 0px
+	background: rgba(0, 0, 0, .3)
 	color: #fff
+	width: 100%
+	margin: 0px
+	transition: all .3s
+
+	&:hover
+		box-shadow: 0px 0px 3px rgba(255, 255, 255, .2)
+		color: #fff
+		background: #17BBE3
+	
 
 .btn-blue
 	background-color: $azul-base
@@ -24,5 +35,4 @@
 	&:hover
 		background-color: #fff
 		color: $azul-base
-		border: 1px solid $azul-base
 	
