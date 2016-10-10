@@ -1,29 +1,120 @@
-.menu 
-	positon: absolute
-	top: 0px
-	left: 0px
-	height: 100vh
-	width: 300px
-	background: #0883EA
-	float: left
-	ul
-		position: relative
-		margin: 0px
-		padding: 0px
-		width: 100%
-		list-style: none
-		li
-			display: block
-			width: 100%
-			padding: 10px 20px
-			min-height: 50px
-			border-bottom: 1px solid rgba(0,0,0,.1)
-			
-			&:first-of-type
-				border-top: 1px solid rgba(0,0,0,.1)
-			a
-				text-decoration: none
-				color: #fff
+@import ../components/colors
+@import ../libs/bootstrap/stylesheets/bootstrap/variables
+@import ../libs/bootstrap/stylesheets/bootstrap/mixins
 
+// $color-font: #414141
+// $color-font-light: #D2F9FF
+// $color-link: #33C6FD
+
+// $background-dark: #192A4F
+// $background-light: #F3F2F2
+
+//$bg-navbar-light: #D8F5FF
+
+body, html
+	color: $color-font
+	height: 100%
+	width: 100%
 main
-	overflow-x: hidden
+	@include container-fixed()
+	display: table
+	padding: 0px
+	height: 100%
+	width: 100%
+
+	.content
+		@include make-row()
+		display: table-row
+		height: 100%
+	
+		#side-menu
+			@include make-md-column(2)
+
+			display: table-cell
+			vertical-align: top
+			background-color: $background-dark
+			color: $color-font-light
+			padding: 0px
+			height: 100%
+			
+			h1
+				text-align: center
+				
+				background-color: $primary
+				margin-top: 0px
+				padding: 10px 0px
+				
+				span
+					font-size: .5em
+					color: #fff
+					font-family: 'Open Sans Condensed', sans-serif
+					position: absolute
+					top: 2px
+					right: 30px
+
+
+		#page-content
+			@include make-md-column(10)
+
+			display: table-cell
+			vertical-align: top
+			background-color: $background-light
+			height: 100%
+			
+			header
+				@include make-row()
+
+				background-color: $bg-navbar-light
+				border-bottom: 1px solid #ccc
+				height: 60px
+
+				.search-area
+					@include make-md-column(5)
+					margin-top: 5px
+
+					.input-search
+						outline: none
+						vertical-align: center
+						width: 400px
+						border: 0px
+						padding: 10px 5px
+					
+				.nav-area
+					@include make-md-column(7)
+		
+					ul
+						list-style: none
+						float: right
+						margin-top: 15px
+						margin-right: 10px
+
+						li
+							float: left
+							margin-left: 25px
+							vertical-align: center
+							a
+								text-decoration: none
+
+
+								.glyphicon
+									color: $background-dark
+									width: 30px
+
+								.label-primary
+									background-color: $primary
+									position: absolute
+									margin-left: -18px
+									margin-top: -2px
+
+			#main-content
+				@include make-row()
+
+				min-height: 100%
+
+			footer
+				@include make-row()
+
+				background-color: $bg-navbar-light
+				border-top: 1px solid #ccc
+				height: 60px
+

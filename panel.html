@@ -10,52 +10,72 @@
 
 	<!-- Fontes  -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-
+	
 	<!-- Estilos -->
 	<link rel="stylesheet" href="css/pages/painel.css">
 
-
-
 </head>
 <body>
-	<div id="wrapper">
-		
-		<!-- Sidebar	 -->
-		<div id="sidebar-wrapper">
-			<ul class="sidebar-nav">
-				<li><a href="#">Início</a></li>
-				<li><a href="#">Mensagens</a></li>
-				<li><a href="#">Produtos</a></li>
-				<li><a href="#">Correio</a></li>
-				<li><a href="#">Configurações</a></li>
-				<li><a href="#">Sair</a></li>
+	<main>
+		<div class="content">
+			<!-- Side menu -->
+			<div id="side-menu">
+				<h1>Sempre <span>auto-responder</span></h1>
 
-			</ul>
-		</div>
-		<!-- /Sidebar	 -->
-		
-		<!-- Conteudo Principa -->
-		<div id="page-content-wrapper">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<a href="#" id="menu-toogle" class="btn btn-primary">Toogle Menu</a>
+			</div>
+
+			<!-- Main content area -->
+			<div id="page-content">
+				
+				<header>
+					<div class="search-area">
+						<input type="search" class="input-search" placeholder="O que você procura?">
 					</div>
+
+					<div class="nav-area">
+						<ul>
+							<li>
+								Bem-vindo a Area de Administração do Sempre!
+							</li>
+
+							<li>
+								<a href="#">
+									  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+									  <span class="label label-primary">5</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+
+									<span class="label label-primary">5</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</header>
+				
+				<div id="main-content">
+					
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-							Coluna 1
+
+				<footer>
+					<div class="pull-left">
+						<strong>Copyright</strong> &copy; 2016
 					</div>
-					<div class="col-md-4">
-							Coluna 2
-					</div>
-					<div class="col-md-4">
-							Coluna 3
-					</div>
-				</div>
+
+					<div class="pull-right"><strong>Sempre</strong> - Painel Administrativo</div>
+				</footer>
 			</div>
 		</div>
-		<!-- /Conteudo Principa -->
-	</div>
+	</main>
+
 </body>
 </html>
