@@ -2,20 +2,13 @@
 @import ../libs/bootstrap/stylesheets/bootstrap/variables
 @import ../libs/bootstrap/stylesheets/bootstrap/mixins
 
-// $color-font: #414141
-// $color-font-light: #D2F9FF
-// $color-link: #33C6FD
 
-// $background-dark: #192A4F
-// $background-light: #F3F2F2
-
-//$bg-navbar-light: #D8F5FF
 
 body, html
 	color: $color-font
 	height: 100%
 	width: 100%
-	background: $background-dark
+	background: #0080DA
 main
 	@include container-fixed()
 	display: table
@@ -33,7 +26,6 @@ main
 
 			display: table-cell
 			vertical-align: top
-			background-color: $background-dark
 			color: $color-font-light
 			padding: 0px
 			height: 100%
@@ -41,7 +33,7 @@ main
 			h1
 				text-align: center
 				margin: 0px
-				background-color: #1F3866
+				background-image: linear-gradient(to bottom, #fff, #E7E7E7)
 				padding: 10px 0px
 				
 				span
@@ -65,7 +57,7 @@ main
 					height: 40px
 					
 					padding: 10px 30px
-					background-color: #1F3866
+					background-color: rgba(255, 255, 255, .8)
 					
 					border-radius: 50px
 					a 
@@ -88,8 +80,8 @@ main
 			header
 				@include make-row()
 
-				background-color: $bg-navbar-light
-				border-bottom: 1px solid #ccc
+				background-image: linear-gradient(to bottom, #fff, #E7E7E7)
+				border-bottom: 0px
 				height: 60px
 
 				.search-area
@@ -105,7 +97,6 @@ main
 					
 				.nav-area
 					@include make-md-column(7)
-		
 					ul
 						list-style: none
 						float: right
